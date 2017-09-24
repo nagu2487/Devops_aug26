@@ -1,0 +1,11 @@
+For example, open /etc/ntp.conf file using vi text editor:
+# vi /etc/ntp.conf
+
+Locate server parameter and set it as follows:
+server pool.ntp.org
+
+Save the file and restart the ntpd service:
+# /etc/init.d/ntpd start
+
+You can synchronize the system clock to an NTP server immediately with following command:
+# ntpdate pool.ntp.org
